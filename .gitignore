@@ -1,36 +1,76 @@
-# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+# Chrome Extension - English Learning for Kids
+# .gitignore
 
-# dependencies
-/node_modules
-/.pnp
-.pnp.js
-
-# testing
-/coverage
-
-# next.js
-/.next/
-/out/
-
-# production
-/build
-
-# misc
+# OS Files
 .DS_Store
-*.pem
+Thumbs.db
+desktop.ini
 
-# debug
+# Editor Files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.project
+
+# Logs
+*.log
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 
-# local env files
-.env*.local
+# Temporary Files
+*.tmp
+*.temp
+.cache/
+
+# Build/Distribution (if added later)
+dist/
+build/
+*.zip
+*.crx
+*.pem
+
+# Node Modules (if build tools added)
+node_modules/
+package-lock.json
+yarn.lock
+
+# Environment Variables
 .env
+.env.local
+.env.production
 
-# vercel
-.vercel
+# Chrome Extension Private Key
+*.pem
 
-# typescript
-*.tsbuildinfo
-next-env.d.ts
+# User Data (for privacy)
+# Note: These shouldn't be in git anyway, but just in case
+chrome-storage-data.json
+
+# Backup Files
+*.backup
+*.bak
+
+# Test Coverage
+coverage/
+.nyc_output/
+
+# Documentation Build Files
+docs/_build/
+
+# macOS
+.AppleDouble
+.LSOverride
+
+# Windows
+$RECYCLE.BIN/
+*.lnk
+
+# Linux
+.directory
+
+# Keep these folders but ignore contents if needed
+# assets/images/*
+# !assets/images/.gitkeep

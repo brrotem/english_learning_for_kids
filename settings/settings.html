@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>English Learning Settings</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;600;700&family=Rubik:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="settings.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>⭐ English Learning for Kids</h1>
+      <p class="subtitle">Fun vocabulary practice every few minutes!</p>
+    </header>
+
+    <main>
+      <!-- Timer Settings -->
+      <section class="card">
+        <h2>⏰ Timer Settings</h2>
+        <div class="setting-group">
+          <label for="timerInterval">Question Interval</label>
+          <select id="timerInterval">
+            <option value="1">Every 1 minute</option>
+            <option value="3">Every 3 minutes</option>
+            <option value="5" selected>Every 5 minutes</option>
+            <option value="10">Every 10 minutes</option>
+          </select>
+        </div>
+
+        <div class="setting-group">
+          <label>
+            <input type="checkbox" id="enableAlarms" checked>
+            Enable automatic questions
+          </label>
+          <p class="help-text">Uncheck to pause all automatic questions</p>
+        </div>
+
+        <button id="triggerNowBtn" class="btn btn-secondary">
+          🎯 Show Question Now
+        </button>
+      </section>
+
+      <!-- Question Mode -->
+      <section class="card">
+        <h2>📚 Question Mode</h2>
+        <div class="setting-group">
+          <label for="questionMode">Learning Mode</label>
+          <select id="questionMode">
+            <option value="younger">👶 Younger Kids: English word → Hebrew answers</option>
+            <option value="older">🧒 Older Kids: Picture → English answers</option>
+          </select>
+          <p class="help-text">Choose based on child's reading ability</p>
+        </div>
+
+        <div class="setting-group">
+          <label for="difficulty">Difficulty Level</label>
+          <select id="difficulty">
+            <option value="easy">Easy</option>
+            <option value="medium">Medium</option>
+            <option value="hard">Hard</option>
+          </select>
+        </div>
+      </section>
+
+      <!-- Audio Settings -->
+      <section class="card">
+        <h2>🔊 Audio Settings</h2>
+        <div class="setting-group">
+          <label>
+            <input type="checkbox" id="ttsEnabled" checked>
+            Enable text-to-speech
+          </label>
+          <p class="help-text">Automatically read English words aloud</p>
+        </div>
+
+        <div class="setting-group">
+          <label for="ttsRate">Speech Speed</label>
+          <input type="range" id="ttsRate" min="0.5" max="1.5" step="0.1" value="0.8">
+          <span id="ttsRateValue">0.8x</span>
+        </div>
+
+        <div class="setting-group">
+          <label for="ttsVolume">Volume</label>
+          <input type="range" id="ttsVolume" min="0" max="1" step="0.1" value="1">
+          <span id="ttsVolumeValue">100%</span>
+        </div>
+
+        <button id="testTTSBtn" class="btn btn-secondary">
+          🎤 Test Voice
+        </button>
+      </section>
+
+      <!-- Statistics -->
+      <section class="card">
+        <h2>📊 Learning Progress</h2>
+        <div class="stats-grid">
+          <div class="stat-card">
+            <div class="stat-value" id="totalQuestions">0</div>
+            <div class="stat-label">Total Questions</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-value" id="correctAnswers">0</div>
+            <div class="stat-label">Correct Answers</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-value" id="accuracy">0%</div>
+            <div class="stat-label">Accuracy</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-value" id="successRate">0%</div>
+            <div class="stat-label">First Try Success</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-value" id="streak">0</div>
+            <div class="stat-label">Day Streak</div>
+          </div>
+        </div>
+        <p class="help-text" style="margin-top: 15px;">
+          <strong>First Try Success:</strong> Percentage of questions answered correctly on the first attempt.
+        </p>
+
+        <button id="resetStatsBtn" class="btn btn-danger">
+          🔄 Reset Statistics
+        </button>
+      </section>
+
+      <!-- About -->
+      <section class="card">
+        <h2>ℹ️ About</h2>
+        <p>English Learning for Kids helps children learn English vocabulary through fun, interactive questions that popup at regular intervals.</p>
+        <p><strong>Version:</strong> 1.2.0</p>
+        <p><strong>Features:</strong></p>
+        <ul>
+          <li>540+ vocabulary words across 19 categories</li>
+          <li>Two learning modes (younger/older kids)</li>
+          <li>Text-to-speech pronunciation</li>
+          <li>Automatic media pausing</li>
+          <li>Progress tracking with first-try success rate</li>
+          <li>Retry system with audio feedback</li>
+        </ul>
+        <p class="help-text">Made with ❤️ for young learners</p>
+        <p class="help-text">Questions and feedback are welcome please contact <a href="mailto:rotembr@gmail.com">rotembr@gmail.com</a>.</p>
+      </section>
+    </main>
+
+    <footer>
+      <button id="saveBtn" class="btn btn-primary">💾 Save Settings</button>
+      <div id="saveMessage" class="save-message hidden">✓ Settings saved!</div>
+    </footer>
+  </div>
+
+  <script src="settings.js"></script>
+</body>
+</html>

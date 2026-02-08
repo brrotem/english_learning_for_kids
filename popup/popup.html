@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>English Question</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;700;800&family=Rubik:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="overlay">
+    <div class="popup-card">
+      <!-- Header with progress -->
+      <div class="header">
+        <div class="progress-info">
+          <span id="progressText">Today: 0/0</span>
+        </div>
+        <button id="speakerBtn" class="icon-btn" title="Repeat word">
+          🔊
+        </button>
+      </div>
+
+      <!-- Question area -->
+      <div class="question-area">
+        <div id="questionText" class="question-text"></div>
+        <div id="imageContainer" class="image-container hidden">
+          <img id="wordImage" src="" alt="Word image">
+        </div>
+      </div>
+
+      <!-- Answer buttons -->
+      <div class="answers-grid">
+        <button class="answer-btn" data-index="0"></button>
+        <button class="answer-btn" data-index="1"></button>
+        <button class="answer-btn" data-index="2"></button>
+        <button class="answer-btn" data-index="3"></button>
+      </div>
+
+      <!-- Feedback area -->
+      <div id="feedback" class="feedback hidden">
+        <span id="feedbackText"></span>
+      </div>
+
+      <!-- Next button (appears after answer) -->
+      <button id="nextBtn" class="next-btn hidden">Continue ➜</button>
+    </div>
+  </div>
+
+  <!-- Confetti canvas -->
+  <canvas id="confetti"></canvas>
+
+  <script src="popup.js"></script>
+</body>
+</html>
