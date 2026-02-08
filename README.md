@@ -16,7 +16,7 @@ A fun, interactive Chrome extension that helps children learn English vocabulary
 - **🎨 Kid-Friendly Interface**: Colorful design with large buttons and animations
 - **📊 Advanced Progress Tracking**: Track correct answers, accuracy, first-try success rate, and daily streaks
 - **🎉 Confetti Celebrations**: Fun animations for correct answers
-- **50+ Vocabulary Words** across multiple categories
+- **500+ Vocabulary Words** across multiple categories
 
 ## 📦 Installation
 
@@ -60,15 +60,15 @@ The extension will be available on the Chrome Web Store soon.
 
 ## 📚 Vocabulary Categories
 
-- 🐱 Animals (10 words)
-- 🎨 Colors (8 words)
-- 🍎 Food (8 words)
-- 🔢 Numbers (10 words)
-- 🌳 Nature (5 words)
-- 👋 Body Parts (6 words)
-- 🪑 Objects (3 words)
+- 🐱 Animals 
+- 🎨 Colors 
+- 🍎 Food 
+- 🔢 Numbers 
+- 🌳 Nature 
+- 👋 Body Parts 
+- 🪑 Objects 
 
-**Total: 50 words** (more coming soon!)
+**Total: 500+ words** (more coming soon!)
 
 ## 🛠️ Technical Details
 
@@ -124,19 +124,17 @@ All data is stored locally - nothing is sent to external servers.
 - [x] Basic extension structure
 - [x] 5-minute timer with popups
 - [x] Younger kids mode with Hebrew answers
-- [x] 50 vocabulary words
+- [x] 500+ vocabulary words
 - [x] Text-to-speech
 - [x] Media pausing (YouTube, etc.)
 - [x] Kid-friendly UI with confetti
+- [x] Older kids mode with pictures
+- [x] Enhanced animations and sounds
+- [x] Advanced settings (active hours, whitelist URLs)
+- [x] Detailed progress reports
+
 
 ### Phase 2 (Coming Soon)
-- [ ] Older kids mode with pictures
-- [ ] 200+ vocabulary words with images
-- [ ] Enhanced animations and sounds
-- [ ] Advanced settings (active hours, whitelist URLs)
-- [ ] Detailed progress reports
-
-### Phase 3 (Future)
 - [ ] Parent dashboard with password protection
 - [ ] Spaced repetition algorithm
 - [ ] Custom word lists
@@ -184,7 +182,7 @@ This extension is designed to be:
 
 For questions, issues, or feedback:
 - GitHub Issues: [Report a bug]
-- Email: [Your email]
+- Email: <a href="mailto:rotembr@gmail.com">rotembr@gmail.com</a>
 
 ## 🙏 Acknowledgments
 
